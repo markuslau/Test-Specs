@@ -2,8 +2,6 @@
   "name": "MarkusLib",
   "version": "0.1.0",
   "summary": "Testing.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/markuslau/MarkusLib",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -11,18 +9,14 @@
   "authors": {
     "Markus": "markusl@outblaze.net"
   },
+  "homepage": "https://github.com/markuslau/MarkusLib",
+  "description": "TODO: Add long description of the pod here.",
   "source": {
     "http": "https://www.dropbox.com/s/ffynmxvpafyo3x2/MarkusLib-0.1.0.zip?dl=0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": [
-
-  ],
-  "public_header_files": [
-
-  ],
   "ios": {
     "preserve_paths": "MarkusLib.framework",
     "public_header_files": [
@@ -32,5 +26,11 @@
 
     ],
     "vendored_frameworks": "MarkusLib.framework"
-  }
+  },
+  "source_files": [
+
+  ],
+  "public_header_files": [
+
+  ]
 }
