@@ -33,12 +33,6 @@
   ],
   "ios": {
     "preserve_paths": "MunerisAppEventKit.framework",
-    "public_header_files": [
-
-    ],
-    "resources": [
-
-    ],
     "vendored_frameworks": "MunerisAppEventKit.framework"
   }
 }
