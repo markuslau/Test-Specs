@@ -30,5 +30,8 @@
   "header_mappings_dir": ".",
   "private_header_files": [
 
-  ]
+  ],
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"$PODS_ROOT/Headers/Public/MunerisAppEventKitPrivate/MunerisAppEventKit\""
+  }
 }
