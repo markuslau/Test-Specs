@@ -47,7 +47,11 @@
   ],
   "requires_arc": false,
   "compiler_flags": "-Werror=objc-method-access -DMUNERIS_VERSION=\\\"5.4.0-SNAPSHOT\\\"",
+  "header_mappings_dir": ".",
   "private_header_files": [
 
-  ]
+  ],
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"$PODS_ROOT/Headers/Public/MunerisCoreKitPrivate/MunerisCoreKit\""
+  }
 }
