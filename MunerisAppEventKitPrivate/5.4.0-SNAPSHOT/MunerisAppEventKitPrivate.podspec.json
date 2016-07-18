@@ -26,7 +26,10 @@
     ]
   },
   "compiler_flags": "-Werror=objc-method-access -DMUNERIS_VERSION=\\\"5.4.0-SNAPSHOT\\\"",
-  "public_header_files": "MunerisAppEventKit/*.h",
+  "public_header_files": [
+    "*.h",
+    "MunerisAppEventKit/*.h"
+  ],
   "header_mappings_dir": ".",
   "private_header_files": [
 
