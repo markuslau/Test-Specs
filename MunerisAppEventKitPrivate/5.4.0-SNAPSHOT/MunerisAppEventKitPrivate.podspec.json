@@ -17,7 +17,7 @@
   "source": {
     "http": "https://www.dropbox.com/s/z4dhlnonb910t3f/MunerisAppEventKitPrivate-5.4.0-SNAPSHOT.zip?dl=0"
   },
-  "source_files": "private/*.h",
+  "source_files": "MunerisAppEventKit/*.h",
   "frameworks": "Foundation",
   "requires_arc": false,
   "dependencies": {
@@ -26,7 +26,8 @@
     ]
   },
   "compiler_flags": "-Werror=objc-method-access -DMUNERIS_VERSION=\\\"5.4.0-SNAPSHOT\\\"",
-  "public_header_files": "private/*.h",
+  "public_header_files": "MunerisAppEventKit/*.h",
+  "header_mappings_dir": "MunerisAppEventKit",
   "private_header_files": [
 
   ]
