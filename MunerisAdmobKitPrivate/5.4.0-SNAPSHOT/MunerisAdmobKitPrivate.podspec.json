@@ -43,6 +43,9 @@
     ],
     "MunerisBannerAdKitPrivate": [
       "5.4.0-SNAPSHOT"
+    ],
+    "MunerisAdmobKit": [
+      "5.4.0-SNAPSHOT"
     ]
   },
   "compiler_flags": "-Werror=objc-method-access -DMUNERIS_VERSION=\\\"5.4.0-SNAPSHOT\\\"",
