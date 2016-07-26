@@ -32,6 +32,9 @@
     ],
     "MunerisCoreKitPrivate": [
       "5.4.0-SNAPSHOT"
+    ],
+    "MunerisMembershipKit": [
+      "5.4.0-SNAPSHOT"
     ]
   },
   "compiler_flags": "-Werror=objc-method-access -DMUNERIS_VERSION=\\\"5.4.0-SNAPSHOT\\\"",
