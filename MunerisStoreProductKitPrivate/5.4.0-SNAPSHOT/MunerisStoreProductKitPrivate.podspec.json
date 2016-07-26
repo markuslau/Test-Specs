@@ -1,0 +1,47 @@
+{
+  "name": "MunerisStoreProductKitPrivate",
+  "version": "5.4.0-SNAPSHOT",
+  "summary": "The Muneris StoreProduct Framework.",
+  "description": "Muneris is a middleware platform for mobile applications, providing such services as multi-store in-app billing abstractions, ads mediation, game services, 3rd-party SDKs abstractions, etc.",
+  "homepage": "https://www.muneris.io",
+  "license": {
+    "type": "Commercial",
+    "text": "BY DOWNLOADING THE MUNERIS SDK FRAMEWORK, YOU ARE AGREEING TO THE TERMS AND CONDITIONS OF THE MUNERIS SDK LICENSE AGREEMENT LOCATED AT https://www.muneris.io/legal/#sdk-license. IF YOU DO NOT AGREE TO THE TERMS AND CONDITIONS OF THE MUNERIS SDK LICENSE AGREEMENT, YOU ARE NOT AUTHORIZED TO AND YOU MAY NOT DOWNLOAD THE MUNERIS SDK FRAMEWORK."
+  },
+  "authors": {
+    "Muneris": "support@muneris.io"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "http": "https://www.dropbox.com/s/ng8rmwxsn9xsckw/MunerisStoreProductKitPrivate-5.4.0-SNAPSHOT.zip?dl=0"
+  },
+  "source_files": [
+    "MunerisStoreProductKit/*.h"
+  ],
+  "frameworks": [
+    "Foundation",
+    "StoreKit"
+  ],
+  "requires_arc": false,
+  "dependencies": {
+    "MunerisTakeoverKit": [
+      "5.4.0-SNAPSHOT"
+    ],
+    "MunerisTakeoverKitPrivate": [
+      "5.4.0-SNAPSHOT"
+    ]
+  },
+  "compiler_flags": "-Werror=objc-method-access -DMUNERIS_VERSION=\\\"5.4.0-SNAPSHOT\\\"",
+  "public_header_files": [
+    "MunerisStoreProductKit/*.h"
+  ],
+  "header_mappings_dir": ".",
+  "private_header_files": [
+
+  ],
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"$PODS_ROOT/Headers/Public/MunerisStoreProductKitPrivate/MunerisStoreProductKit\""
+  }
+}
