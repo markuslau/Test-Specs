@@ -57,5 +57,10 @@
   ],
   "pod_target_xcconfig": {
     "HEADER_SEARCH_PATHS": "\"$PODS_ROOT/Headers/Public/MunerisCoreKitPrivate/MunerisCoreKit\""
+  },
+  "dependencies": {
+    "MunerisCoreKit": [
+      "5.4.0-SNAPSHOT"
+    ]
   }
 }
