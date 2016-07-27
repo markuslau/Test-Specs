@@ -15,7 +15,7 @@
     "ios": "7.0"
   },
   "source": {
-    "http": "https://www.dropbox.com/s/jr3yqegl9qf2ujx/MunerisMobileAppTrackingKitPrivate-5.4.0-SNAPSHOT.zip?dl=0"
+    "http": "https://www.dropbox.com/s/jr3yqegl9qf2ujx/MunerisMobileAppTrackingKitPrivate-5.4.0-SNAPSHOT.zip?dl=0&TATSX=TCPDT"
   },
   "source_files": [
     "MunerisMobileAppTrackingKit/*.h"
