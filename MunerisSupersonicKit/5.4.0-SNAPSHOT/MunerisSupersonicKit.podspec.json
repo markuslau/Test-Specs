@@ -1,0 +1,57 @@
+{
+  "name": "MunerisSupersonicKit",
+  "version": "5.4.0-SNAPSHOT",
+  "summary": "The Muneris Supersonic Framework.",
+  "description": "Muneris is a middleware platform for mobile applications, providing such services as multi-store in-app billing abstractions, ads mediation, game services, 3rd-party SDKs abstractions, etc.",
+  "homepage": "https://www.muneris.io",
+  "license": {
+    "type": "Commercial",
+    "text": "BY DOWNLOADING THE MUNERIS SDK FRAMEWORK, YOU ARE AGREEING TO THE TERMS AND CONDITIONS OF THE MUNERIS SDK LICENSE AGREEMENT LOCATED AT https://www.muneris.io/legal/#sdk-license. IF YOU DO NOT AGREE TO THE TERMS AND CONDITIONS OF THE MUNERIS SDK LICENSE AGREEMENT, YOU ARE NOT AUTHORIZED TO AND YOU MAY NOT DOWNLOAD THE MUNERIS SDK FRAMEWORK."
+  },
+  "authors": {
+    "Muneris": "support@muneris.io"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "http": "https://www.dropbox.com/s/c7nppdw8f3mhcvr/MunerisSupersonicKit-5.4.0-SNAPSHOT.zip?dl=0&CBQBW=DEQRL"
+  },
+  "source_files": [
+
+  ],
+  "frameworks": [
+    "Foundation",
+    "AVFoundation",
+    "CoreMedia",
+    "CoreVideo",
+    "QuartzCore",
+    "SystemConfiguration",
+    "CoreGraphics",
+    "CFNetwork",
+    "MobileCoreServices",
+    "StoreKit",
+    "AdSupport",
+    "CoreLocation",
+    "CoreTelephony",
+    "Security"
+  ],
+  "libraries": "z",
+  "requires_arc": false,
+  "dependencies": {
+    "MunerisTakeoverKit": [
+      "5.4.0-SNAPSHOT"
+    ],
+    "SupersonicAds": [
+      "6.3.11"
+    ]
+  },
+  "compiler_flags": "-Werror=objc-method-access -DMUNERIS_VERSION=\\\"5.4.0-SNAPSHOT\\\"",
+  "public_header_files": [
+
+  ],
+  "ios": {
+    "preserve_paths": "MunerisSupersonicKit.framework",
+    "vendored_frameworks": "MunerisSupersonicKit.framework"
+  }
+}
