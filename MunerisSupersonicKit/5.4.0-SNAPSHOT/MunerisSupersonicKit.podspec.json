@@ -15,11 +15,9 @@
     "ios": "7.0"
   },
   "source": {
-    "http": "https://www.dropbox.com/s/c7nppdw8f3mhcvr/MunerisSupersonicKit-5.4.0-SNAPSHOT.zip?dl=0&SHFWD=VYHRJ"
+    "git": "git@gitlab.muneris.io:muneris/ios-supersonic.git"
   },
-  "source_files": [
-
-  ],
+  "source_files": "src/**/*.{h,m}",
   "frameworks": [
     "Foundation",
     "AVFoundation",
@@ -44,14 +42,17 @@
     ],
     "SupersonicAds": [
       "6.3.11"
+    ],
+    "MunerisTakeoverKitPrivate": [
+      "5.4.0-SNAPSHOT"
     ]
   },
   "compiler_flags": "-Werror=objc-method-access -DMUNERIS_VERSION=\\\"5.4.0-SNAPSHOT\\\"",
-  "public_header_files": [
+  "public_header_files": "src/public/*.h",
+  "private_header_files": [
 
   ],
-  "ios": {
-    "preserve_paths": "MunerisSupersonicKit.framework",
-    "vendored_frameworks": "MunerisSupersonicKit.framework"
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"$PODS_ROOT/Headers/Public/MunerisCoreKit/MunerisCoreKit\" \"$PODS_ROOT/Headers/Public/MunerisTakeoverKit/MunerisTakeoverKit\""
   }
 }
