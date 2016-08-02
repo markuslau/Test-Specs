@@ -15,9 +15,11 @@
     "ios": "7.0"
   },
   "source": {
-    "git": "git@gitlab.muneris.io:muneris/ios-adcolony.git"
+    "http": "https://www.dropbox.com/s/105cnjq03cu06bx/MunerisAdcolonyKit-5.4.0-SNAPSHOT.zip?dl=0&TYHRF=QUDKY"
   },
-  "source_files": "src/**/*.{h,m}",
+  "source_files": [
+
+  ],
   "frameworks": [
     "Foundation",
     "UIKit"
@@ -32,20 +34,14 @@
     ],
     "AdColony": [
       "2.5.3"
-    ],
-    "MunerisAppEventKitPrivate": [
-      "5.4.0-SNAPSHOT"
-    ],
-    "MunerisTakeoverKitPrivate": [
-      "5.4.0-SNAPSHOT"
     ]
   },
   "compiler_flags": "-Werror=objc-method-access -DMUNERIS_VERSION=\\\"5.4.0-SNAPSHOT\\\"",
-  "public_header_files": "src/public/*.h",
-  "private_header_files": [
+  "public_header_files": [
 
   ],
-  "pod_target_xcconfig": {
-    "HEADER_SEARCH_PATHS": "\"$PODS_ROOT/Headers/Public/MunerisCoreKit/MunerisCoreKit\" \"$PODS_ROOT/Headers/Public/MunerisAppEventKit/MunerisAppEventKit\" \"$PODS_ROOT/Headers/Public/MunerisTakeoverKit/MunerisTakeoverKit\""
+  "ios": {
+    "preserve_paths": "MunerisAdcolonyKit.framework",
+    "vendored_frameworks": "MunerisAdcolonyKit.framework"
   }
 }
