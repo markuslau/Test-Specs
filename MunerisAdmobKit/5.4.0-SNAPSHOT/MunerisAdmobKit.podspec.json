@@ -15,9 +15,11 @@
     "ios": "7.0"
   },
   "source": {
-    "git": "git@gitlab.muneris.io:muneris/ios-admob.git"
+    "http": "https://www.dropbox.com/s/8i9g7pej595ilod/MunerisAdmobKit-5.4.0-SNAPSHOT.zip?dl=0&UPXIF=WYPER"
   },
-  "source_files": "src/**/*.{h,m}",
+  "source_files": [
+
+  ],
   "frameworks": "Foundation",
   "requires_arc": false,
   "dependencies": {
@@ -32,23 +34,14 @@
     ],
     "Google-Mobile-Ads-SDK": [
       "7.7.1"
-    ],
-    "MunerisAppEventKitPrivate": [
-      "5.4.0-SNAPSHOT"
-    ],
-    "MunerisTakeoverKitPrivate": [
-      "5.4.0-SNAPSHOT"
-    ],
-    "MunerisBannerAdKitPrivate": [
-      "5.4.0-SNAPSHOT"
     ]
   },
   "compiler_flags": "-Werror=objc-method-access -DMUNERIS_VERSION=\\\"5.4.0-SNAPSHOT\\\"",
-  "public_header_files": "src/public/*.h",
-  "private_header_files": [
+  "public_header_files": [
 
   ],
-  "pod_target_xcconfig": {
-    "HEADER_SEARCH_PATHS": "\"$PODS_ROOT/Headers/Public/MunerisCoreKit/MunerisCoreKit\" \"$PODS_ROOT/Headers/Public/MunerisAppEventKit/MunerisAppEventKit\" \"$PODS_ROOT/Headers/Public/MunerisTakeoverKit/MunerisTakeoverKit\" \"$PODS_ROOT/Headers/Public/MunerisBannerAdKit/MunerisBannerAdKit\""
+  "ios": {
+    "preserve_paths": "MunerisAdmobKit.framework",
+    "vendored_frameworks": "MunerisAdmobKit.framework"
   }
 }
