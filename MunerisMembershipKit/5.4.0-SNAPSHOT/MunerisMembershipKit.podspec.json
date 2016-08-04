@@ -15,9 +15,11 @@
     "ios": "7.0"
   },
   "source": {
-    "git": "git@gitlab.muneris.io:muneris/ios-membership.git"
+    "http": "https://www.dropbox.com/s/nv6ktfbfce7903v/MunerisMembershipKit-5.4.0-SNAPSHOT.zip?dl=0&GBWYDA=ROUPWS"
   },
-  "source_files": "src/**/*.{h,m}",
+  "source_files": [
+
+  ],
   "frameworks": [
     "Foundation",
     "UIKit"
@@ -27,17 +29,14 @@
   "dependencies": {
     "MunerisCoreKit": [
       "5.4.0-SNAPSHOT"
-    ],
-    "MunerisCoreKitPrivate": [
-      "5.4.0-SNAPSHOT"
     ]
   },
   "compiler_flags": "-Werror=objc-method-access -DMUNERIS_VERSION=\\\"5.4.0-SNAPSHOT\\\"",
-  "public_header_files": "src/public/*.h",
-  "private_header_files": [
+  "public_header_files": [
 
   ],
-  "pod_target_xcconfig": {
-    "HEADER_SEARCH_PATHS": "\"$PODS_ROOT/Headers/Public/MunerisCoreKit/MunerisCoreKit\""
+  "ios": {
+    "preserve_paths": "MunerisMembershipKit.framework",
+    "vendored_frameworks": "MunerisMembershipKit.framework"
   }
 }
