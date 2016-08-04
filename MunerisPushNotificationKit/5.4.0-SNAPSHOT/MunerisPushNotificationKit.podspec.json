@@ -15,11 +15,9 @@
     "ios": "7.0"
   },
   "source": {
-    "http": "https://www.dropbox.com/s/gmmun4zw68vmy3a/MunerisPushNotificationKit-5.4.0-SNAPSHOT.zip?dl=0&UFTMD=MMUNA"
+    "git": "git@gitlab.muneris.io:muneris/ios-pushnotification.git"
   },
-  "source_files": [
-
-  ],
+  "source_files": "src/**/*.{h,m}",
   "frameworks": [
     "Foundation",
     "UIKit"
@@ -29,14 +27,17 @@
   "dependencies": {
     "MunerisCoreKit": [
       "5.4.0-SNAPSHOT"
+    ],
+    "MunerisCoreKitPrivate": [
+      "5.4.0-SNAPSHOT"
     ]
   },
   "compiler_flags": "-Werror=objc-method-access -DMUNERIS_VERSION=\\\"5.4.0-SNAPSHOT\\\"",
-  "public_header_files": [
+  "public_header_files": "src/public/*.h",
+  "private_header_files": [
 
   ],
-  "ios": {
-    "preserve_paths": "MunerisPushNotificationKit.framework",
-    "vendored_frameworks": "MunerisPushNotificationKit.framework"
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"$PODS_ROOT/Headers/Public/MunerisCoreKit/MunerisCoreKit\""
   }
 }
