@@ -15,24 +15,25 @@
     "ios": "7.0"
   },
   "source": {
-    "http": "https://www.dropbox.com/s/z5j4ub9m54epnzs/MunerisBannerAdKit-5.4.0-SNAPSHOT.zip?dl=0&HBQRM=ROJOA"
+    "git": "git@gitlab.muneris.io:muneris/ios-bannerad.git"
   },
-  "source_files": [
-
-  ],
+  "source_files": "src/**/*.{h,m}",
   "frameworks": "Foundation",
   "requires_arc": false,
   "dependencies": {
     "MunerisCoreKit": [
       "5.4.0-SNAPSHOT"
+    ],
+    "MunerisCoreKitPrivate": [
+      "5.4.0-SNAPSHOT"
     ]
   },
   "compiler_flags": "-Werror=objc-method-access -DMUNERIS_VERSION=\\\"5.4.0-SNAPSHOT\\\"",
-  "public_header_files": [
+  "public_header_files": "src/public/*.h",
+  "private_header_files": [
 
   ],
-  "ios": {
-    "preserve_paths": "MunerisBannerAdKit.framework",
-    "vendored_frameworks": "MunerisBannerAdKit.framework"
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"$PODS_ROOT/Headers/Public/MunerisCoreKit/MunerisCoreKit\""
   }
 }
