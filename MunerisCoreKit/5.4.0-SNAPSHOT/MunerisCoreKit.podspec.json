@@ -15,10 +15,14 @@
     "ios": "7.0"
   },
   "source": {
-    "git": "git@gitlab.muneris.io:muneris/ios-core.git"
+    "http": "https://www.dropbox.com/s/5o9dkr8xy9aomap/MunerisCoreKit-5.4.0-SNAPSHOT.zip?dl=0&VTWFSH=RHGUXS"
   },
-  "source_files": "src/**/*.{h,m}",
-  "public_header_files": "src/public/*.h",
+  "source_files": [
+
+  ],
+  "public_header_files": [
+
+  ],
   "frameworks": [
     "CoreTelephony",
     "AdSupport",
@@ -47,7 +51,8 @@
   ],
   "requires_arc": false,
   "compiler_flags": "-Werror=objc-method-access -DMUNERIS_VERSION=\\\"5.4.0-SNAPSHOT\\\"",
-  "private_header_files": [
-
-  ]
+  "ios": {
+    "preserve_paths": "MunerisCoreKit.framework",
+    "vendored_frameworks": "MunerisCoreKit.framework"
+  }
 }
